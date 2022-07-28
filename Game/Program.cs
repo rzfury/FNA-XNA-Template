@@ -1,12 +1,12 @@
-﻿namespace RZFNA.Game
+﻿namespace RZEngine.Game
 {
     class Program
     {
         static void Main(string[] args)
         {
-            using(Engine.Game game = new())
+            using(Core.Game game = new())
             {
-                game.Window.Title = "RZFNA";
+                game.Window.Title = "RZEngine";
                 game.Run();
             }
         }

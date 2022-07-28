@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon />
-    <StartupObject>RZFNA.Game.Program</StartupObject>
+    <StartupObject>RZEngine.Core.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Dependencies\FNA\FNA.Core.csproj" />
-    <ProjectReference Include="..\Engine\RZFNA.Engine.csproj" />
+    <ProjectReference Include="..\Engine\RZEngine.Core.csproj" />
   </ItemGroup>
 
 </Project>

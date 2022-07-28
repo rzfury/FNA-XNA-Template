@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32413.511
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RZFNA.Engine", "Engine\RZFNA.Engine.csproj", "{5DE50898-D165-4E56-AFB2-2035ECD089C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RZEngine.Core", "Engine\RZEngine.Core.csproj", "{5DE50898-D165-4E56-AFB2-2035ECD089C1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FNA.Core", "Dependencies\FNA\FNA.Core.csproj", "{0EEF2F97-7E77-4EBD-B670-CD203EC0A908}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RZFNA.Game", "Game\RZFNA.Game.csproj", "{F17DFC21-3F24-48EA-ACD6-79049FA11C77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RZEngine.Game", "Game\RZEngine.Game.csproj", "{F17DFC21-3F24-48EA-ACD6-79049FA11C77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPacker", "DataPacker\DataPacker.csproj", "{15768FAB-F2EB-45A6-A248-7486540BC483}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +19,8 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|Any CPU.Build.0 = Debug|x64
 		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Debug|x64.Build.0 = Debug|Any CPU
 		{5DE50898-D165-4E56-AFB2-2035ECD089C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,14 +33,22 @@ Global
 		{0EEF2F97-7E77-4EBD-B670-CD203EC0A908}.Release|Any CPU.ActiveCfg = Release|x64
 		{0EEF2F97-7E77-4EBD-B670-CD203EC0A908}.Release|x64.ActiveCfg = Release|x64
 		{0EEF2F97-7E77-4EBD-B670-CD203EC0A908}.Release|x64.Build.0 = Release|x64
-		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|Any CPU.Build.0 = Debug|x64
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Debug|x64.Build.0 = Debug|Any CPU
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Release|x64.ActiveCfg = Release|Any CPU
 		{F17DFC21-3F24-48EA-ACD6-79049FA11C77}.Release|x64.Build.0 = Release|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Debug|x64.Build.0 = Debug|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Release|x64.ActiveCfg = Release|Any CPU
+		{15768FAB-F2EB-45A6-A248-7486540BC483}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

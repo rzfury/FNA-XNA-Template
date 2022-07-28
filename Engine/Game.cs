@@ -1,11 +1,20 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
+using RZEngine.Core.ContentManagement;
+using RZEngine.Core.Debugging;
+using RZEngine.Core.Tasking;
 
-namespace RZFNA.Engine
+namespace RZEngine.Core
 {
     public class Game : Microsoft.Xna.Framework.Game
     {
+        public static Game Instance;
+        public Logger Logger;
+        public ContentManager ContentMgr;
+        public RZAContentLoader ContentLoader;
+        public TaskManager Tasks;
+
         private GraphicsDeviceManager _gdm;
         private SpriteBatch _sb;
 
@@ -17,6 +26,12 @@ namespace RZFNA.Engine
                 PreferredBackBufferHeight = 720,
                 IsFullScreen = false
             };
+
+            ContentMgr = new();
+            ContentLoader = new(ContentMgr);
+            Logger = new();
+            Tasks = new();
+            Instance = this;
         }
 
         protected override void Initialize()
@@ -27,6 +42,8 @@ namespace RZFNA.Engine
         protected override void LoadContent()
         {
             base.LoadContent();
+
+            ContentLoader.Unpack();
         }
 
         protected override void UnloadContent()
